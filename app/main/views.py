@@ -11,8 +11,11 @@ from ..import db,photos
 def index():
     subscriber_form=SubscriberForm()
     blogs = Blog.query.all()
+    myquote = get_quotes()
+    quote = myquote['quote']
+    quote_author = myquote['author']
     title = "blog"
-    return render_template('index.html',blogs=blogs,subscriber_form=subscriber_form, title = title)
+    return render_template('index.html',blogs=blogs,subscriber_form=subscriber_form,quote=quote,quote_author = quote_author,title = title)
 
 @main.route('/new/blog', methods = ['GET','POST'])
 @login_required
@@ -23,8 +26,8 @@ def new_blog():
         db.session.add(blog)
         db.session.commit()
         return redirect(url_for('main.index'))
-     
-    return render_template('blog.html',form = form ,blog=blog) 
+
+    return render_template('blog.html',form = form ,blog=blog)
 
 
 
@@ -38,7 +41,7 @@ def subscriber():
         mail_message("Hey Welcome To My Personal Blog ","email/welcome_subscriber",subscriber.email,subscriber=subscriber)
     subscriber = Blog.query.all()
     beauty = Blog.query.all()
-    return render_template('index.html',subscriber=subscriber,subscriber_form=subscriber_form,beauty=beauty) 
+    return render_template('index.html',subscriber=subscriber,subscriber_form=subscriber_form,beauty=beauty)
 
 @main.route('/new/Beauty', methods = ['GET','POST'])
 @login_required
@@ -60,7 +63,7 @@ def new_fashion():
         db.session.add(blog)
         db.session.commit()
         return redirect(url_for('main.index'))
-    return render_template('fashion.html',form =form)    
+    return render_template('fashion.html',form =form)
 @main.route('/new/lifestyle', methods = ['GET','POST'])
 @login_required
 def new_lifestyle():
@@ -70,7 +73,7 @@ def new_lifestyle():
         db.session.add(blog)
         db.session.commit()
         return redirect(url_for('main.index'))
-    return render_template('lifestyle.html',form =form)    
+    return render_template('lifestyle.html',form =form)
 
 @main.route('/user/<uname>')
 def profile(uname):
@@ -108,21 +111,15 @@ def update_pic(uname):
         path = f'photos/{filename}'
         admin.profile_pic_path = path
         db.session.commit()
-    return redirect(url_for('main.profile',uname=uname))    
+    return redirect(url_for('main.profile',uname=uname))
 
 @main.route('/comment/new/<int:id>', methods = ['GET','POST'])
 @login_required
-def new_comment(id):  
+def new_comment(id):
     comment = CommentForm()
     if comment.validate_on_submit():
         com = Comment(content=comment.comment.data,blog_id=id)
         db.session.add(com)
         db.session.commit()
-        
+
     return render_template('comment.html',comment=comment)
-
-
-
-
-
-  
