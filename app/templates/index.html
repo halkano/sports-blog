@@ -1,15 +1,20 @@
 {%extends 'base.html'%}
 {% import 'bootstrap/wtf.html' as wtf %}
 {%block content%}
-<h2 font color="pink">BASKETBALL, FOOTBALL AND NFL</h2>
+
+
+<h5 font color="pink"> QUOTES OF THE DAY</h5>
+          {{ quote }}
+          {{ quote_author }}
+
+
+
     {{wtf.quick_form(subscriber_form)}}
    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZ1gyXLTk3kSXlr8rZTR25LnxcwGzKsNATEVZpt8wO9qLm_ltfg" height="200" width="1000">
 
-   <div class="well">
+      <div class="well">
 
-
-
-        {%for blog in blogs%}
+      {%for blog in blogs%}
 
 
         <p>
@@ -20,17 +25,32 @@
         <button>READMORE</button>
 
         {%endfor%}
-        </div>
-        <div  class="container">
+      </div>
+
+
+      <div  class="container">
             <div class="wells">
             <div class="row">
-                <div class="col-md-8">
+                <div style="align"class="col-md-8">
                     <h4>BASKETBALL</h4>
                     <img src="https://imagesvc.timeincapp.com/v3/fan/image?url=https://sircharlesincharge.com/wp-content/uploads/getty-images/2017/11/878554790-portland-trail-blazers-v-brooklyn-nets.jpg.jpg&"height="250" width="250">
-               <p>FOOTBALL</p>
+
+                      <p>FOOTBALL</p>
                    <img src="https://si.wsj.net/public/resources/images/S1-BZ958_puma02_OR_20190228054537.jpg"height="250" width="250">
-                <p>7 EAsy influencer approved by dctors</p>
+                <p>EPL AND NBA ARE THE MOST INFLUENCIER LEAGUES IN THE WORLD</p>
+                <img src="https://media4.s-nbcnews.com/j/newscms/2018_35/2551031/180831-saints-play-rams-ew-1147a_1a27255e93e2924837cd9390ef914b61.fit-760w.jpg"height="250" width="250">
                 </div>
+
+              <p>FOOTBALL</p>
+           <img src="https://si.wsj.net/public/resources/images/S1-BZ958_puma02_OR_20190228054537.jpg"height="250" width="250">
+        <p>EPL AND NBA ARE THE MOST INFLUENCIER LEAGUES IN THE WORLD</p>
+        <p>FOOTBALL</p>
+     <img src="https://si.wsj.net/public/resources/images/S1-BZ958_puma02_OR_20190228054537.jpg"height="250" width="250">
+  <p>EPL AND NBA ARE THE MOST INFLUENCIER LEAGUES IN THE WORLD</p>
+  <p>FOOTBALL</p>
+<img src="https://si.wsj.net/public/resources/images/S1-BZ958_puma02_OR_20190228054537.jpg"height="250" width="250">
+<p>EPL AND NBA ARE THE MOST INFLUENCIER LEAGUES IN THE WORLD</p>
+
 
             </div>
         </div>
