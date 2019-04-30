@@ -19,11 +19,11 @@ class UpdateProfile(FlaskForm):
 class SubscriberForm(FlaskForm):
     email = StringField('Your Email Address',validators=[Required(),Email()])
     title = StringField('Entre Your Name' ,validators=[Required()])
-    submit = SubmitField('Subscribe')
+    submit = SubmitField('Subscribe')    
 
     def validate_email(self,data_field):
                 if Subscriber.query.filter_by(email =data_field.data).first():
-                    raise ValidationError('There is an account with that email')
+                    raise ValidationError('There is an account with that email')    
 
 
 # class ContentForm(FlaskForm):
@@ -33,3 +33,7 @@ class SubscriberForm(FlaskForm):
 class CommentForm(FlaskForm):
    comment = TextAreaField('WRITE COMMENT')
    submit = SubmitField('SUBMIT')
+
+
+
+
