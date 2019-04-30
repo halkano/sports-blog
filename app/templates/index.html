@@ -1,1 +1,26 @@
-<h1> {{ message }} </h1>
+{% extends 'base.html'%}
+
+  <!-- Content block -->
+  {% block content %}
+<body>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Wisdom Words</h3>
+         <!-- Upcoming Quotes-->
+
+     <ul>
+    <li>{{ quote}}</li>
+    <h5>quote by</h5>
+    <li class="btn btn-primary">{{ quote_author }}</li>
+
+    </ul>.
+
+      </div>
+    </div>
+  </div>
+
+</body>
+  {% endblock%}

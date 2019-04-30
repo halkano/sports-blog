@@ -1,14 +1,15 @@
 from flask import render_template,request,redirect,url_for
 from . import main
-from ..models import Review
+from ..requests import get_quotes
 
 # Views
 @main.route('/')
 def index():
-
-    '''
-    View root page function that returns the index page and its data
-    '''
-
-    message = 'Hello World'
-    return render_template('index.html',message = message)
+   '''
+   This is the home page view.
+   '''
+   myquote = get_quotes()
+   quote = myquote['quote']
+   quote_author = myquote['author']
+   title = 'Home - Welcome to The best quotes Review Website Online'
+   return render_template('index.html',quote = quote,quote_author = quote_author,title=title)
