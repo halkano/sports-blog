@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template,request,redirect,url_for,abort
 from . import main
+from ..requests import get_quotes
 from flask_login import login_required,current_user
 from .forms import BlogForm,UpdateProfile,CommentForm,SubscriberForm
 from .. models import User,Blog,Comment,Subscriber
