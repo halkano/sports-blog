@@ -36,13 +36,14 @@ $ python3.6 -m pip install Flask-Script
 
 Insert the following info into it:
 python3.6 manage.py server
+
 To run the application, in your terminal:
-
 $ chmod +x start.sh $ ./start.sh
-Testing the Application To run the tests for the class files:
 
+Testing the Application To run the tests for the class files:
 $ python3.6 manage.py tests
- Technologies Used
+
+Technologies Used
 Python3.6 Flask
 License Copyright (c) 2018 Henry Halkano
 
