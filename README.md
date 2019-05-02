@@ -13,19 +13,19 @@ You can view the site at:Heroku
 | ------------------- | ----------------------------- | ----------------------------- |
 | Signup | string text | Creates user account |
 | Login | string text | logs in to user account |
-| Submit new pitch | string text | new pitch from user |
-| down vote a pitch | Click on the downvote button | adds +1 downvote  |
-| up vote a pitch | Click on the upvote button |adds +1 upvote |
-| Add comment to pitch | String text  | New comment to pitch selected |
-| View posted pitch | Click on pitch categories  | Display pitches in that category |
-| View user pitch | Click on user profile  | Display pitches posted by the user|
+| click BASKETBALL  | login | new blog-post |
+| | Click on the FOOTBALL button | login  |
+| new blog-post | Click on the NFL button |login or Signup |
+| new blog-post | Click on comment  | display comment form |
+| post a new comment | Click on READMORE  | Display more view|
 
 
 
 
 $ git clone https://github.com/Halkano/sports-BLog/
 $ cd sports-blog
- Running the Application
+
+#### Running the Application
 Creating the virtual environment
 
 $ python3.6 -m venv --without-pip virtual $
@@ -35,7 +35,9 @@ $ curl https://bootstrap.pypa.io/get-pip.py |
 ## Set-up and Installation
 
 -$ python3.6 -m pip install Flask
+
  -$ python3.6 -m pip install Flask-Bootstrap
+
 -$ python3.6 -m pip install Flask-Script
 
 #### Insert the following info into it:
@@ -52,7 +54,7 @@ $ curl https://bootstrap.pypa.io/get-pip.py |
 -Python3.6 Flask
 
 -License Copyright (c) 2018  Henry Halkano
- 
+
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
