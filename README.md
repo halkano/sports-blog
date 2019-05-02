@@ -14,8 +14,8 @@ You can view the site at:Heroku
 | Signup | string text | Creates user account |
 | Login | string text | logs in to user account |
 | click BASKETBALL  | login | new blog-post |
-| Click on the FOOTBALL button | login  |
-| new blog-post | Click on the NFL button |login or Signup |
+| Click on the FOOTBALL button | login  | new blog-post |
+| Click on the NFL button |login or Signup |
 | new blog-post | Click on comment  | display comment form |
 | post a new comment | Click on READMORE  | Display more view|
 
