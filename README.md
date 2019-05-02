@@ -38,21 +38,21 @@ $ curl https://bootstrap.pypa.io/get-pip.py |
  -$ python3.6 -m pip install Flask-Bootstrap
 -$ python3.6 -m pip install Flask-Script
 
-Insert the following info into it:
+#### Insert the following info into it:
 -python3.6 manage.py server
 
-To run the application, in your terminal:
+#### To run the application, in your terminal:
 -$ chmod +x start.sh $
 -./start.sh
 
-Testing the Application To run the tests for the class files:
+#### Testing the Application To run the tests for the class files:
 -$ python3.6 manage.py tests
 
- Technologies Used
+###### Technologies Used
 -Python3.6 Flask
 
-License Copyright (c) 2018 Henry Halkano
-
+-License Copyright (c) 2018  Henry Halkano
+ 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
