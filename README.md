@@ -16,7 +16,7 @@ You can view the site at:Heroku
 | click BASKETBALL  | login or Signup | new blog-post |
 | Click on the FOOTBALL button | login or Signup  | new blog-post |
 | Click on the NFL button |login or Signup |new blog-post |
-| Click on comment  | display comment form | post a new comment | |Click on READMORE  | Display more view|
+| Click on comment  | display comment form | post a new comment | |Click on READMORE  | Display more view|....|
 
 
 
