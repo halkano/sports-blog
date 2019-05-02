@@ -6,7 +6,7 @@ Built By Henry halkano
 Sports-blog is a website where you can create and share your opinions and other users can read and comment on them.
 You can view the site at:Heroku
 
-## User Stories These are the behaviours/features that the application implements for use by a user.
+##### User Stories These are the behaviours/features that the application implements for use by a user.
 
 
 | Behavior            | Input                         | Output                        |
@@ -52,8 +52,8 @@ source virtual/bin/env
 ###### Technologies Used
 - Python3.6 Flask
 
-- License Copyright (c) 2018
-- Henry Halkano
+###### License Copyright (c) 2018
+Henry Halkano
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
